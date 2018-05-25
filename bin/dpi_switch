@@ -1,0 +1,14 @@
+#!/bin/sh
+
+dpimode=$1
+
+if [ "$dpimode" == "high" ] || [ "$dpimode" == "low" ]; then
+    ln -sf .Xdefaults.$dpimode ~/.Xdefaults
+    ln -sf .xinitrc.$dpimode ~/.xinitrc
+    ln -sf config.$dpimode ~/.config/polybar/config
+    ln -sf config.$dpimode ~/.config/i3/config
+else
+  echo "usage: $0 (low|high)"
+  exit 1
+fi
+

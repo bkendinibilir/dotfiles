@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sudo openvpn --config ~/.secret/smedia.ovpn --script-security 2 --up /etc/openvpn/scripts/update-systemd-resolved --down /etc/openvpn/scripts/update-systemd-resolved

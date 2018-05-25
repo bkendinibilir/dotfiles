@@ -1,0 +1,55 @@
+#!/bin/sh
+
+# Low DPI Display on HDMI
+if xrandr -q | grep "HDMI1 connected"; then 
+  xrandr --output HDMI1 --right-of eDP1 --scale 1.5x1.5 --primary
+  i3-msg "workspace 3, move workspace to output HDMI1"
+  i3-msg "workspace 4, move workspace to output HDMI1"
+  i3-msg "workspace 5, move workspace to output HDMI1"
+  i3-msg "workspace 6, move workspace to output HDMI1"
+  i3-msg "workspace 7, move workspace to output HDMI1"
+  i3-msg "workspace 8, move workspace to output HDMI1"
+  i3-msg "workspace 9, move workspace to output HDMI1"
+  i3-msg "workspace 10, move workspace to output HDMI1"
+  i3-msg "workspace 2, move workspace to output HDMI1"
+elif xrandr -q | grep "HDMI1 disconnected"; then
+  xrandr --output HDMI1 --auto 
+fi
+
+# High DPI Display on Displayport
+if xrandr -q | grep "DP2 connected"; then 
+  xrandr --output DP2 --right-of eDP1 --mode 3840x2160 --scale 1.1x1.1 --panning 4224x2376+2560+0 --primary
+  i3-msg "workspace 3, move workspace to output DP2"
+  i3-msg "workspace 4, move workspace to output DP2"
+  i3-msg "workspace 5, move workspace to output DP2"
+  i3-msg "workspace 6, move workspace to output DP2"
+  i3-msg "workspace 7, move workspace to output DP2"
+  i3-msg "workspace 8, move workspace to output DP2"
+  i3-msg "workspace 9, move workspace to output DP2"
+  i3-msg "workspace 10, move workspace to output DP2"
+  i3-msg "workspace 2, move workspace to output DP2"
+elif xrandr -q | grep "DP2 disconnected"; then
+  xrandr --output DP2 --auto
+
+  if xrandr -q | grep "HDMI1 disconnected"; then
+    xrandr --output eDP1 --primary
+    i3-msg "workspace 2, move workspace to output eDP1"
+    i3-msg "workspace 3, move workspace to output eDP1"
+    i3-msg "workspace 4, move workspace to output eDP1"
+    i3-msg "workspace 5, move workspace to output eDP1"
+    i3-msg "workspace 6, move workspace to output eDP1"
+    i3-msg "workspace 7, move workspace to output eDP1"
+    i3-msg "workspace 8, move workspace to output eDP1"
+    i3-msg "workspace 9, move workspace to output eDP1"
+    i3-msg "workspace 10, move workspace to output eDP1"
+  fi
+fi
+
+i3-msg "workspace 1, move workspace to output eDP1"
+
+sleep 0.5
+
+# wallpaper
+feh --bg-scale ~/Documents/Wallpapers/wallpaper.jpg
+
+~/.config/polybar/launch.sh

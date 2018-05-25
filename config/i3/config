@@ -1,0 +1,216 @@
+##################
+##    GLOBAL    ##
+##################
+
+set $mod Mod1
+set $win Mod4
+set $term --no-startup-id urxvt
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+
+##################
+##    DESIGN    ##
+##################
+
+font pango:DejaVu Sans Mono 8
+
+default_border pixel 1
+
+gaps inner 7
+gaps outer 3
+
+smart_gaps on
+smart_borders no_gaps
+
+client.focused          #4c7899 #285577 #ffffff #00FFFF   #008080
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.background       #ffffff
+
+
+##################
+##  WORKSPACES  ##
+##################
+
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+set $ws9 9
+set $ws10 10
+
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+
+# start visual studio code editor on workspace 10
+assign [class="Code"] $ws10
+
+
+##################
+## KEY BINDINGS ##
+##################
+
+# reload, restart and exit i3 window manager
+bindsym $mod+Ctrl+Shift+c reload
+bindsym $mod+Ctrl+Shift+r restart
+bindsym $mod+Ctrl+Shift+e exec i3-msg exit
+
+# start new terminal or any other programm
+bindsym $mod+Return exec $term -e zsh
+bindsym $mod+d exec zsh -c "rofi -show run" 
+
+# kill programm / close window
+bindsym $mod+q kill
+
+# ------------------------------------------
+
+# switch between windows
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move windows around
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+bindsym $mod+x move workspace to output right
+
+# resize windows
+bindsym $win+Shift+Down resize shrink height 5 px or 5 ppt
+bindsym $win+Shift+Up resize grow height 5 px or 5 ppt
+bindsym $win+Shift+Left resize grow width 5 px or 5 ppt
+bindsym $win+Shift+Right resize shrink width 5 px or 5 ppt
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# split horizontal or vertical
+bindsym $mod+h split h
+bindsym $mod+v split v
+
+# toggle tiling / floating
+bindsym $mod+space floating toggle
+
+# ------------------------------------------
+
+# special key bindings for volume and backlight control
+bindsym XF86AudioMute exec amixer set Master toggle
+bindsym XF86AudioLowerVolume exec amixer set Master 10%-
+bindsym XF86AudioRaiseVolume exec amixer set Master 10%+
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym Shift+XF86MonBrightnessDown exec xbacklight -dec 1
+bindsym Shift+XF86MonBrightnessUp exec xbacklight -inc 1
+
+# ------------------------------------------
+
+# start browser with //SEIBERT/MEDIA profile (default) or private (Profile 1)
+bindsym $mod+Shift+b exec $BROWSER
+bindsym $mod+Ctrl+Shift+b exec $BROWSER --profile-directory="Profile 1"
+
+# xrandr refresh after connecting or disconnecting displays
+bindsym $mod+Shift+r exec ~/bin/xrefresh
+
+# lock screen
+bindsym $mod+Shift+l exec --no-startup-id ~/.config/i3/lock.sh
+
+# take screenshot
+bindsym $mod+Shift+o exec flameshot gui
+
+# clipboard manager with clipmenu and dmenu
+bindsym $mod+Shift+v exec clipmenu -fn Terminus:size=10 -nb '#505050' -nf '#FFFFFF' -sb '#00FFFF' -sf '#000000' -l 20
+
+
+##################
+##  SCRATCHPAD  ##
+##################
+
+bindsym $mod+Shift+c [instance="calendar"] scratchpad show; [instance="calendar"] move position center
+for_window [instance="calendar"] floating enable
+for_window [instance="calendar"] resize set 2400 1300
+for_window [instance="calendar"] move scratchpad
+for_window [instance="calendar"] border pixel 3
+
+bindsym $mod+Shift+f [instance="ranger"] scratchpad show; [instance="ranger"] move position center
+for_window [instance="ranger"] floating enable
+for_window [instance="ranger"] resize set 2200 1200
+for_window [instance="ranger"] move scratchpad
+for_window [instance="ranger"] border pixel 3
+
+bindsym $mod+Shift+p [instance="Enpass"] scratchpad show; [instance="Enpass"] move position center
+for_window [instance="Enpass"] floating enable
+for_window [instance="Enpass"] resize set 2200 1200
+for_window [instance="Enpass"] move scratchpad
+for_window [instance="Enpass"] border pixel 3
+
+bindsym $mod+Shift+s [instance="dropdownshell"] scratchpad show; [instance="dropdownshell"] move position center
+for_window [instance="dropdownshell"] floating enable
+for_window [instance="dropdownshell"] resize set 2000 1000
+for_window [instance="dropdownshell"] move scratchpad
+for_window [instance="dropdownshell"] border pixel 3
+
+bindsym $mod+Shift+t [instance="todoist"] scratchpad show; [instance="todoist"] move position center
+for_window [instance="todoist"] floating enable
+for_window [instance="todoist"] resize set 1600 1300
+for_window [instance="todoist"] move scratchpad
+for_window [instance="todoist"] border pixel 3
+
+bindsym $mod+Shift+y [instance="pythonshell"] scratchpad show; [instance="pythonshell"] move position center
+for_window [instance="pythonshell"] floating enable
+for_window [instance="pythonshell"] resize set 1200 500
+for_window [instance="pythonshell"] move scratchpad
+for_window [instance="pythonshell"] border pixel 3
+
+
+#################
+##  AUTOSTART  ##
+#################
+
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+exec --no-startup-id exec enpass
+exec --no-startup-id exec flameshot
+
+exec --no-startup-id $term +transparent -name dropdownshell -e zsh
+exec --no-startup-id $term +transparent -name pythonshell --font "xft:DejaVu Sans Mono for Powerline:size=16" -e zsh -c "python -q"
+exec --no-startup-id $term +transparent -name ranger -e ranger
+
+exec --no-startup-id $term -name calendar -e calendar
+exec --no-startup-id $term -name todoist -e todoist
+
