@@ -231,7 +231,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = #FF0000
 format-underline = #FF0000
 label = %percentage:2%%
