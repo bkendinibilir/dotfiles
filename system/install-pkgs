@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if ! pacman -Q yay2 >/dev/null; then
+if ! pacman -Q yay >/dev/null; then
   echo installing aurhelper yay
   owd=$(pwd)
   cd ~
