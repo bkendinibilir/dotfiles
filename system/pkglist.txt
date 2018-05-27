@@ -102,7 +102,6 @@ systemd-sysvcompat
 tar
 terminus-font
 texinfo
-trizen
 ttf-dejavu
 ttf-dejavu-sans-mono-powerline-git
 ttf-font-awesome
@@ -130,6 +129,7 @@ xorg-xinit
 xorg-xinput
 xorg-xprop
 xorg-xrandr
+yay
 zsh
 zsh-autosuggestions
 zsh-completions
