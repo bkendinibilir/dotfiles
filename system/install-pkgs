@@ -1,0 +1,16 @@
+#!/bin/sh
+
+if ! pacman -Q yay2 >/dev/null; then
+  echo installing aurhelper yay
+  owd=$(pwd)
+  cd ~
+  [ -d git ] || mkdir git
+  cd git
+  git clone https://aur.archlinux.org/yay.git
+  cd yay
+  makepkg -fsri
+  cd $owd
+fi
+
+yay -S --needed $(cat pkglist.txt|xargs)
+
