@@ -11,8 +11,5 @@ sudo cp mkinitcpio.conf /etc
 sudo cp suspend@.service /etc/systemd/system
 sudo systemctl enable suspend@segfault
 
-sudo mkdir -p /etc/pacman.d/hooks
-sudo cp pkglist.hook /etc/pacman.d/hooks
-
 sudo cp vconsole.conf /etc
 
