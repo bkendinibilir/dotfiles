@@ -9,7 +9,9 @@
 - link:
     ~/.dotfiles: ''
     ~/.apple-keyboard.xkb: apple-keyboard.xkb
-    ~/.bash_profile: bash_profile
+    ~/.bash_profile:
+      force: true
+      path: bash_profile
     ~/.config/: 
       glob: true
       path: config/*
