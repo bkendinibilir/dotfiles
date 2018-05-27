@@ -1,0 +1,52 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+      relative: true
+
+- clean: ['~']
+
+- link:
+    ~/.dotfiles: ''
+    ~/.apple-keyboard.xkb: apple-keyboard.xkb
+    ~/.bash_profile: bash_profile
+    ~/.config/: 
+      glob: true
+      path: config/*
+    ~/.config/systemd/user/default.target.wants/clipmenud.service: 
+      path: /usr/lib/systemd/user/clipmenud.service
+      relative: false
+    ~/.profile: profile
+    ~/.vimrc: vimrc
+    ~/.Xdefaults: Xdefaults
+    ~/.xinitrc: xinitrc
+    ~/.xmodmap: xmodmap
+    ~/.zshrc: zshrc
+
+    ~/bin: bin
+
+    /etc/default/grub: 
+      path: system/grub
+      relative: false
+    /etc/locale.conf:
+      path: system/locale.conf
+      relative: false
+    /etc/locale.gen:
+      path: system/locale.gen
+      relative: false
+    /etc/pacman.d/mirrorlist:
+      path: system/mirrorlist
+      relative: false
+    /etc/mkinitcpio.conf:
+      path: system/mkinitcpio.conf
+      relative: false
+    /etc/systemd/system/suspend@.service:
+      path: system/suspend@.service
+      relative: false
+    /etc/vconsole.conf:
+      path: system/vconsole.conf
+      relative: false
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
