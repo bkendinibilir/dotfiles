@@ -16,6 +16,7 @@
     ~/.config/systemd/user/default.target.wants/clipmenud.service: 
       path: /usr/lib/systemd/user/clipmenud.service
       relative: false
+    ~/.gitconfig: gitconfig
     ~/.profile: profile
     ~/.vimrc: vimrc
     ~/.Xdefaults: Xdefaults
