@@ -23,6 +23,9 @@
     ~/.xmodmap: xmodmap
     ~/.zshrc: zshrc
 
+    ~/.profitbricks-auth: ~/.secret/.profitbricks-auth
+    ~/.ssh: ~/.secret/.ssh
+
     ~/bin: bin
 
     /etc/default/grub: 
