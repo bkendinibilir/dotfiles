@@ -27,6 +27,9 @@
     ~/.bw_teamvault_secrets.cfg: ~/.secret/.bw_teamvault_secrets.cfg
     ~/.profitbricks-auth: ~/.secret/.profitbricks-auth
     ~/.ssh: ~/.secret/.ssh
+    ~/git/isac/bw/.secrets.cfg:
+      create: false
+      path: ~/.secret/.bw_secrets.cfg
 
     ~/bin: bin
 
