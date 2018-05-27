@@ -13,3 +13,7 @@ sudo systemctl enable suspend@segfault
 
 sudo cp vconsole.conf /etc
 
+sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
+sudo cp tty1-override.conf /etc/systemd/system/getty@tty1.service.d/override.conf
+
+sudo systemctl enable systemd-resolved.service
