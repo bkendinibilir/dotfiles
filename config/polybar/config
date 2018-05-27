@@ -392,7 +392,7 @@ label-separator-foreground = ${colors.foreground-alt}
 menu-0-0 =  reboot
 menu-0-0-exec = sudo reboot
 menu-0-1 =  power off
-menu-0-1-exec = sudo power off
+menu-0-1-exec = sudo poweroff
 
 [module/vpn-smedia]
 type = custom/script
