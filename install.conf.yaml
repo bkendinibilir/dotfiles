@@ -24,6 +24,7 @@
     ~/.xmodmap: xmodmap
     ~/.zshrc: zshrc
 
+    ~/.bw_teamvault_secrets.cfg: ~/.secret/.bw_teamvault_secrets.cfg
     ~/.profitbricks-auth: ~/.secret/.profitbricks-auth
     ~/.ssh: ~/.secret/.ssh
 
