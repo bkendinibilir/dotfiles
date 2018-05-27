@@ -42,6 +42,9 @@
     /etc/locale.gen:
       path: system/locale.gen
       relative: false
+    /etc/pacman.d/hooks/pkglist.hook:
+      path: system/pkglist.hook
+      relative: false
     /etc/pacman.d/mirrorlist:
       path: system/mirrorlist
       relative: false
