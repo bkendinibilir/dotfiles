@@ -1,0 +1,12 @@
+#!/bin/sh
+
+cp locale.conf /etc
+cp locale.gen /etc
+locale-gen
+mkdir -p /etc/pacman.d/hooks
+cp pkglist.hook /etc/pacman.d/hooks
+cp mirrorlist /etc/pacman.d
+cp mkinitcpio.conf /etc
+cp suspend@.service /etc/systemd/system
+cp vconsole.conf /etc
+
