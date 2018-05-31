@@ -1,6 +1,5 @@
 alias vi=vim
-alias p=pacman
-alias t=trizen
+alias p=pacman --color auto
 alias chrome=google-chrome-stable
 
 export EDITOR=vim
