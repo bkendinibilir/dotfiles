@@ -29,5 +29,8 @@ keychain ~/.ssh/id_dsa
 [ -f ~/.keychain/$HOSTNAME-sh ] && . ~/.keychain/$HOSTNAME-sh 2>/dev/null
 [ -f ~/.keychain/$HOSTNAME-sh-gpg ] && . ~/.keychain/$HOSTNAME-sh-gpg 2>/dev/null
 
+# night shift, location: //SEIBERT/MEDIA GmbH HQ
+redshift -l 50.0786854:8.234806 &
+
 # start i3 window manager
 exec i3

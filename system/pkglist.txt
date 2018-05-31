@@ -90,6 +90,7 @@ pyenv-virtualenv
 pyqt5-common
 ranger
 read-edid
+redshift
 reiserfsprogs
 rofi
 rxvt-unicode
