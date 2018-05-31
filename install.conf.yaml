@@ -37,6 +37,7 @@
 
     /usr/lib/eclipse/eclipse.ini:
       force: true
+      relative: false
       path: eclipse.ini
 
 - shell:
