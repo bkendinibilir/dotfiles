@@ -13,7 +13,7 @@ xset r rate 220 40
 xmodmap ~/.xmodmap
 
 # switch left alt and left cmd key on apple keyboards
-xkbcomp -i 9 ~/.apple-keyboard.xkb $DISPLAY
+~/bin/keyboard_reconfig
 
 # lock screen after 10 minutes
 xautolock -time 10 -locker /home/segfault/.config/i3/lock.sh &

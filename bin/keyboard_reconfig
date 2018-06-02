@@ -1,0 +1,6 @@
+#!/bin/sh
+
+for id in $(xinput list|grep "Apple Keyboard"|sed -E 's/.*id=([0-9]+).*/\1/'); do
+  xkbcomp -i $id ~/.apple-keyboard.xkb $DISPLAY >/dev/null
+done 
+
