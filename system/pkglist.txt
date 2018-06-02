@@ -98,6 +98,7 @@ rxvt-unicode
 s-nail
 sed
 shadow
+sshfs
 sudo
 sysfsutils
 systemd-sysvcompat
