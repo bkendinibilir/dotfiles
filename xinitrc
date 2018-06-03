@@ -21,9 +21,6 @@ xautolock -time 10 -locker /home/segfault/.config/i3/lock.sh &
 # xrandr management
 ~/bin/xrefresh
 
-# color profiles
-dispwin /home/segfault/.color/TPLCD.icm
-
 # manage ssh-keys
 keychain ~/.ssh/id_dsa
 [ -f ~/.keychain/$HOSTNAME-sh ] && . ~/.keychain/$HOSTNAME-sh 2>/dev/null
