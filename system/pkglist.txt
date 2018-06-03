@@ -80,7 +80,6 @@ patch
 pciutils
 pcmciautils
 perl
-pkg-config
 polybar
 procps-ng
 psmisc
