@@ -19,6 +19,12 @@
       path: /usr/lib/systemd/user/clipmenud.service
       relative: false
     ~/.gitconfig: gitconfig
+    ~/.oh-my-zsh:
+      relink: true
+      path: oh-my-zsh/
+    ~/.oh-my-zsh/custom/themes/powerlevel9k:
+      path: powerlevel9k/
+      relative: false
     ~/.profile: profile
     ~/.vimrc: vimrc
     ~/.Xdefaults: Xdefaults
