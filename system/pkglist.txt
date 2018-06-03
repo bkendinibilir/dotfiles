@@ -105,7 +105,6 @@ tar
 terminus-font
 texinfo
 ttf-dejavu
-ttf-dejavu-sans-mono-powerline-git
 ttf-font-awesome
 unzip
 urxvt-perls
