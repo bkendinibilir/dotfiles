@@ -1,54 +1,12 @@
-# https://terminal.sexy
-# collection/hund
+#include ".Xresources.d/color/hund" 
 
-! special
-*.foreground:   #ffffff
-*.background:   #161616
-*.cursorColor:  #ffffff
-
-! black
-*.color0:       #222222
-*.color8:       #666666
-
-! red
-*.color1:       #e84f4f
-*.color9:       #d23d3d
-
-! green
-*.color2:       #b7ce42
-*.color10:      #bde077
-
-! yellow
-*.color3:       #fea63c
-*.color11:      #ffe863
-
-! blue
-*.color4:       #66aabb
-*.color12:      #aaccbb
-
-! magenta
-*.color5:       #b7416e
-*.color13:      #e16a98
-
-! cyan
-*.color6:       #6d878d
-*.color14:      #42717b
-
-! white
-*.color7:       #dddddd
-*.color15:      #cccccc
-
-# -----------------------------------------------------------------
-
-URxvt*foreground: 	    #CCCCCC
-URxvt*foreground_bold: 	#FFFFFF
-URxvt.cursorColor:	    #E0E0E0
-URxvt.transparent:	    true
 URxvt.depth:		        32
-URxvt.font: 		        xft:DejaVu Sans Mono for Powerline:size=10
+!URxvt.font: 		        xft:DejaVu Sans Mono for Powerline:size=10
+URxvt.font: 		        xft:DejaVuSansMono Nerd Font:style=Book:pixelsize=24
 URxvt.intensityStyles:	false
 URxvt.scrollBar:	      false
 URxvt.shading:		      10
+URxvt.letterSpace:      0
 
 URxvt.saveLines:	      10000
 
@@ -71,7 +29,7 @@ URxvt.keysym.Control-Right:   \033[1;5C
 URxvt.resize-font.smaller:	  C-Down
 URxvt.resize-font.bigger:	    C-Up
 
-# -----------------------------------------------------------------
+! -----------------------------------------------------------------
 
 rofi.color-enabled:	    true
 rofi.color-window:	    #000, #000, #000
@@ -85,5 +43,5 @@ rofi.bw:		            0
 rofi.hide-scrollbar:	  true
 rofi.width:		          30
 
-# -----------------------------------------------------------------
+! -----------------------------------------------------------------
 

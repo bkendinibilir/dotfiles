@@ -93,7 +93,7 @@ read-edid
 redshift
 reiserfsprogs
 rofi
-rxvt-unicode
+rxvt-unicode-wcwidthcallback
 s-nail
 sed
 shadow

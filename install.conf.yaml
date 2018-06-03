@@ -18,6 +18,8 @@
     ~/.config/systemd/user/default.target.wants/clipmenud.service: 
       path: /usr/lib/systemd/user/clipmenud.service
       relative: false
+    ~/.local/share/fonts:
+      path: fonts/
     ~/.gitconfig: gitconfig
     ~/.oh-my-zsh:
       relink: true
@@ -30,6 +32,7 @@
     ~/.Xdefaults: Xdefaults
     ~/.xinitrc: xinitrc
     ~/.xmodmap: xmodmap
+    ~/.Xresources.d: Xresources.d/
     ~/.zshrc: zshrc
 
     ~/.bw_teamvault_secrets.cfg: ~/.secret/.bw_teamvault_secrets.cfg
