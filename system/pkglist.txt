@@ -118,6 +118,7 @@ which
 wpa_actiond
 wpa_supplicant
 xautolock
+xcalib
 xf86-video-intel
 xfsprogs
 xiccd
