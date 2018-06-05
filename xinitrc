@@ -1,9 +1,9 @@
 # UI scaling for hidpi displays
-export GDK_SCALE=2
-export GDK_DPI_SCALE=0.9
-export ELM_SCALE=2
-export QT_AUTO_SCREEN_SCALE_FACTOR=2
-xrandr --dpi 175
+#export GDK_SCALE=2
+#export GDK_DPI_SCALE=0.9
+#export ELM_SCALE=2
+#export QT_AUTO_SCREEN_SCALE_FACTOR=2
+#xrandr --dpi 175
 
 # no beeping and faster key repeat
 xset -b

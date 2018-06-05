@@ -166,31 +166,31 @@ bindsym $mod+Shift+v exec clipmenu -fn Terminus:size=10 -nb '#505050' -nf '#FFFF
 
 bindsym $mod+Shift+c [instance="calendar"] scratchpad show; [instance="calendar"] move position center
 for_window [instance="calendar"] floating enable
-for_window [instance="calendar"] resize set 2400 1300
+for_window [instance="calendar"] resize set 1800 1000
 for_window [instance="calendar"] move scratchpad
 for_window [instance="calendar"] border pixel 3
 
 bindsym $mod+Shift+f [instance="ranger"] scratchpad show; [instance="ranger"] move position center
 for_window [instance="ranger"] floating enable
-for_window [instance="ranger"] resize set 2200 1200
+for_window [instance="ranger"] resize set 1800 900
 for_window [instance="ranger"] move scratchpad
 for_window [instance="ranger"] border pixel 3
 
 bindsym $mod+Shift+p [instance="Enpass"] scratchpad show; [instance="Enpass"] move position center
 for_window [instance="Enpass"] floating enable
-for_window [instance="Enpass"] resize set 2200 1200
+for_window [instance="Enpass"] resize set 1600 800
 for_window [instance="Enpass"] move scratchpad
 for_window [instance="Enpass"] border pixel 3
 
 bindsym $mod+Shift+s [instance="dropdownshell"] scratchpad show; [instance="dropdownshell"] move position center
 for_window [instance="dropdownshell"] floating enable
-for_window [instance="dropdownshell"] resize set 2000 1000
+for_window [instance="dropdownshell"] resize set 1600 800
 for_window [instance="dropdownshell"] move scratchpad
 for_window [instance="dropdownshell"] border pixel 3
 
 bindsym $mod+Shift+t [instance="todoist"] scratchpad show; [instance="todoist"] move position center
 for_window [instance="todoist"] floating enable
-for_window [instance="todoist"] resize set 1600 1300
+for_window [instance="todoist"] resize set 1200 1000
 for_window [instance="todoist"] move scratchpad
 for_window [instance="todoist"] border pixel 3
 

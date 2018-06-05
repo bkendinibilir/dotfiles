@@ -9,9 +9,9 @@ alert = #bd2c40
 
 [bar/primary]
 monitor = ${env:MONITOR:eDP1}
-dpi=170
+#dpi=170
 width = 100%
-height = 34
+height = 28
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -32,11 +32,11 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = "Noto Sans:size=10;1"
-font-1 = "fixed:pixelsize=9"
-font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=9;1"
-font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=9;1"
-font-4 = "Font Awesome 5 Brands:pixelsize=10;1"
+font-0 = "Noto Sans:size=13;1"
+font-1 = "fixed:pixelsize=13"
+font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=13;1"
+font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=13;1"
+font-4 = "Font Awesome 5 Brands:pixelsize=13;1"
 
 modules-left = i3
 modules-center = 

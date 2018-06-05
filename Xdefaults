@@ -2,7 +2,7 @@
 
 URxvt.depth:		        32
 !URxvt.font: 		        xft:DejaVu Sans Mono for Powerline:size=10
-URxvt.font: 		        xft:DejaVuSansMono Nerd Font:style=Book:pixelsize=24
+URxvt.font: 		        xft:DejaVuSansMono Nerd Font:style=Book:pixelsize=18
 URxvt.intensityStyles:	false
 URxvt.scrollBar:	      false
 URxvt.shading:		      10
