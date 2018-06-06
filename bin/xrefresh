@@ -18,7 +18,7 @@ fi
 
 # High DPI Display on Displayport
 if xrandr -q | grep "DP2 connected"; then 
-  xrandr --output DP2 --right-of eDP1 --mode 3840x2160 --scale 1.1x1.1 --panning 4224x2376+2560+0 --primary
+  xrandr --output DP2 --right-of eDP1 --mode 3840x2160 --scale 0.75x0.75 --panning 2880x1620+1920+0 --primary
   i3-msg "workspace 3, move workspace to output DP2"
   i3-msg "workspace 4, move workspace to output DP2"
   i3-msg "workspace 5, move workspace to output DP2"
@@ -28,6 +28,7 @@ if xrandr -q | grep "DP2 connected"; then
   i3-msg "workspace 9, move workspace to output DP2"
   i3-msg "workspace 10, move workspace to output DP2"
   i3-msg "workspace 2, move workspace to output DP2"
+  xrandr --output DP2 --primary
 elif xrandr -q | grep "DP2 disconnected"; then
   xrandr --output DP2 --auto
 
