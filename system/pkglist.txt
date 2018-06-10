@@ -1,6 +1,9 @@
 alsa-utils
+arduino-avr-core
 autoconf
 automake
+avr-gcc
+avrdude
 bash
 bind-tools
 binutils
