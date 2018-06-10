@@ -26,6 +26,7 @@ e2fsprogs
 eclipse-java
 efibootmgr
 enpass-bin
+exfat-utils
 fakeroot
 feh
 ffmpeg
