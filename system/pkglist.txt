@@ -98,6 +98,7 @@ reiserfsprogs
 rofi
 rxvt-unicode-wcwidthcallback
 s-nail
+screen
 sed
 shadow
 sshfs
