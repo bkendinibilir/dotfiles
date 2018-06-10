@@ -20,6 +20,7 @@ dialog
 diffutils
 direnv
 dmenu
+dnsmasq
 docker
 e2fsprogs
 eclipse-java
