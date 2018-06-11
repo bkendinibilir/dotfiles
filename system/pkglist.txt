@@ -123,6 +123,7 @@ virtualbox
 visual-studio-code-bin
 wget
 which
+whois
 wpa_actiond
 wpa_supplicant
 xautolock
