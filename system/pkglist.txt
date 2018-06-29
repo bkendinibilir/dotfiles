@@ -21,7 +21,6 @@ docker
 e2fsprogs
 eclipse-java
 efibootmgr
-enpass-bin
 fakeroot
 feh
 ffmpeg
