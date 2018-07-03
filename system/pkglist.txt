@@ -39,6 +39,7 @@ git
 glibc
 google-chrome
 grep
+groff
 grub
 gucharmap
 gzip
@@ -77,8 +78,8 @@ openvpn-update-systemd-resolved
 pacman
 patch
 pciutils
-pcmciautils
 perl
+pkgconf
 polybar
 procps-ng
 psmisc
@@ -98,13 +99,13 @@ shadow
 sshfs
 sudo
 sysfsutils
+systemd
 systemd-sysvcompat
 tar
 terminus-font
 texinfo
 ttf-dejavu
 ttf-font-awesome
-unzip
 urxvt-perls
 urxvt-resize-font-git
 usbutils
@@ -128,7 +129,6 @@ xorg-xbacklight
 xorg-xinit
 xorg-xinput
 xorg-xprop
-xorg-xrandr
 yay
 zsh
 zsh-autosuggestions
