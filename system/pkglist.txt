@@ -5,6 +5,7 @@ automake
 avr-gcc
 avrdude
 bash
+bftpd
 bind-tools
 binutils
 bison
