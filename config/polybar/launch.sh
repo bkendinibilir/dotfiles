@@ -10,7 +10,8 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 if [ $SCREENS -gt 1 ]; then
-  polybar additional &
+  polybar left &
+  polybar right &
 fi
 
 polybar primary &

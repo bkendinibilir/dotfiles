@@ -73,9 +73,19 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 # workspace 1 default on notebook display
 workspace $ws1 output eDP1
+workspace $ws2 output DP1-2
+workspace $ws3 output DP1-2
+workspace $ws4 output DP1-2
+workspace $ws5 output DP1-2
+workspace $ws6 output DP1-2
+workspace $ws7 output DP1-2
+workspace $ws8 output DP1-2
+workspace $ws9 output DP1-1
+workspace $ws10 output DP1-1
 
-# start visual studio code editor on workspace 8
+# start visual studio code editor and virtuabox on specific workspaces
 assign [class="Code"] $ws8
+assign [class="VirtualBox"] $ws10
 
 
 ##################
