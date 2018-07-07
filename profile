@@ -11,6 +11,8 @@ export PATH=/home/segfault/bin:$PATH
 
 export GOPATH=$HOME/go
 
+export PBCLI=pb-docker
+
 # use GTK2 for SWT cause of bugs with hidpi
 export SWT_GTK3=0
 
