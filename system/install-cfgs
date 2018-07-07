@@ -18,3 +18,9 @@ sudo cp tty1-override.conf /etc/systemd/system/getty@tty1.service.d/override.con
 
 sudo systemctl enable systemd-resolved.service
 sudo systemctl daemon-reload
+
+sudo cp default.pa /etc/pulse/
+sudo pulseaudio -k
+
+sudo systemctl enable bluetooth.service
+
