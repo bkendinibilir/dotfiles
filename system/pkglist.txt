@@ -9,6 +9,7 @@ bftpd
 bind-tools
 binutils
 bison
+bluez-utils
 bzip2
 clipmenu
 coreutils
@@ -90,6 +91,7 @@ procps-ng
 psmisc
 pulseaudio
 pulseaudio-alsa
+pulseaudio-bluetooth
 pyenv-virtualenv
 pyqt5-common
 ranger
