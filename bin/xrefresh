@@ -8,7 +8,6 @@ if xrandr -q | grep "DP1-2 connected"; then
   i3-msg "workspace 4, move workspace to output DP1-2"
   i3-msg "workspace 5, move workspace to output DP1-2"
   i3-msg "workspace 6, move workspace to output DP1-2"
-  i3-msg "workspace 8, move workspace to output DP1-2"
   i3-msg "workspace 2, move workspace to output DP1-2"
 
 elif xrandr -q | grep "DP1-2 disconnected"; then
@@ -30,6 +29,7 @@ fi
 if xrandr -q | grep "DP1-1 connected"; then
   xrandr --output DP1-1 --pos 6784x450 --scale 1.8x1.8 --auto
   sleep 0.5
+  i3-msg "workspace 8, move workspace to output DP1-1"
   i3-msg "workspace 9, move workspace to output DP1-1"
   i3-msg "workspace 10, move workspace to output DP1-1"
 elif xrandr -q | grep "DP1-1 disconnected"; then
@@ -37,6 +37,7 @@ elif xrandr -q | grep "DP1-1 disconnected"; then
   if xrandr -q | grep "DP1-2 connected"; then
     i3-msg "workspace 10, move workspace to output DP1-2"
     i3-msg "workspace 9, move workspace to output DP1-2"
+    i3-msg "workspace 8, move workspace to output DP1-2"
   fi
 fi
 

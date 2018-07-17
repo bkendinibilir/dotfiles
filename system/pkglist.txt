@@ -104,6 +104,7 @@ s-nail
 screen
 sed
 shadow
+spotify
 sshfs
 sudo
 sysfsutils

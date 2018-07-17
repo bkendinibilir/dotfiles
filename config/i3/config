@@ -79,12 +79,13 @@ workspace $ws4 output DP1-2
 workspace $ws5 output DP1-2
 workspace $ws6 output DP1-2
 workspace $ws7 output DP1-2
-workspace $ws8 output DP1-2
+workspace $ws8 output DP1-1
 workspace $ws9 output DP1-1
 workspace $ws10 output DP1-1
 
 # start visual studio code editor and virtuabox on specific workspaces
-assign [class="Code"] $ws8
+assign [class="Code"] $ws7
+assign [class="spotify"] $ws8
 assign [class="VirtualBox"] $ws10
 
 
