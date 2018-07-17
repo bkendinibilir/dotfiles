@@ -15,6 +15,7 @@ clipmenu
 coreutils
 cryptsetup
 cups
+cura
 device-mapper
 dhclient
 dhcpcd
