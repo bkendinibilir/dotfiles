@@ -18,8 +18,8 @@ font pango:DejaVu Sans Mono 8
 
 default_border pixel 1
 
-gaps inner 4
-gaps outer 2
+gaps inner 1
+gaps outer 1
 
 smart_gaps on
 smart_borders no_gaps
