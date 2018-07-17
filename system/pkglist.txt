@@ -79,6 +79,7 @@ nano
 netctl
 nmap
 noto-fonts
+openscad
 openssh
 openvpn
 openvpn-update-systemd-resolved
