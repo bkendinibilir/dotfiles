@@ -36,11 +36,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/segfault/google-cloud-sdk/path.zsh.inc' ]; then source '/home/segfault/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/segfault/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/segfault/google-cloud-sdk/completion.zsh.inc'; fi
+# kubectl autocompletion
 
 autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
@@ -50,6 +46,13 @@ autoload -U +X bashcompinit && bashcompinit
 eval "$(direnv hook zsh)"
 
 source $ZSH/oh-my-zsh.sh
+
+# gcloud
+if [ -f '/opt/google-cloud-sdk/path.zsh.inc' ]; then source '/opt/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/opt/google-cloud-sdk/completion.zsh.inc' ]; then source '/opt/google-cloud-sdk/completion.zsh.inc'; fi
+
+# kubectl
+if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi
 
 #POWERLEVEL9K_COLOR_SCHEME='light'
 POWERLEVEL9K_MODE='nerdfont-complete'
