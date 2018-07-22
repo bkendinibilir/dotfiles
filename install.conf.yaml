@@ -36,6 +36,7 @@
     ~/.zshrc: zshrc
 
     ~/.bw_teamvault_secrets.cfg: ~/.secret/.bw_teamvault_secrets.cfg
+    ~/.kube/config: ~/.secret/kubectl_config
     ~/.profitbricks-auth: ~/.secret/.profitbricks-auth
     ~/.ssh: ~/.secret/.ssh
     ~/git/isac/bw/.secrets.cfg:

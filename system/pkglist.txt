@@ -45,6 +45,7 @@ gimp
 git
 glibc
 google-chrome
+google-cloud-sdk
 grep
 groff
 grub
