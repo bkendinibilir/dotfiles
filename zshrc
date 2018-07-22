@@ -36,8 +36,6 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-# kubectl autocompletion
-
 autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
 #source /usr/lib/node_modules/profitbricks-cli/autocomplete
