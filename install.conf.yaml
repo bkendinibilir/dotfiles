@@ -42,6 +42,9 @@
     ~/git/isac/bw/.secrets.cfg:
       create: false
       path: ~/.secret/.bw_secrets.cfg
+    ~/git/nc1-kubernetes/.env:
+      create: false
+      path: ~/.secret/.env_nc1-kubernetes
 
     ~/bin: bin
 
