@@ -1,0 +1,3 @@
+#!/bin/sh
+
+VirtualBox --startvm "win7"
