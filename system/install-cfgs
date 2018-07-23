@@ -24,3 +24,5 @@ sudo pulseaudio -k
 
 sudo systemctl enable bluetooth.service
 
+sudo timedatectl set-ntp true
+
