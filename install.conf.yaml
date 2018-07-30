@@ -35,6 +35,7 @@
     ~/.Xresources.d: Xresources.d/
     ~/.zshrc: zshrc
 
+    ~/.aptly_api_password_sm: ~/.secret/.aptly_api_password_sm
     ~/.bw_teamvault_secrets.cfg: ~/.secret/.bw_teamvault_secrets.cfg
     ~/.kube/config: ~/.secret/config_kubectl
     ~/.profitbricks-auth: ~/.secret/.profitbricks-auth
